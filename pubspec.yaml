@@ -1,0 +1,113 @@
+name: inimigos_naturais_soja
+description: Aplicativo para reconhecimento de inimigos naturais da soja.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.1.10
+  cupertino_icons: ^1.0.2
+  carousel_slider: ^4.2.1
+  flutter_native_splash: ^2.2.18
+  photo_view: ^0.14.0
+  shared_preferences: ^2.1.1
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.12.0"
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon_launcher/ic_launcher.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.1
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/assets_appBar/
+    - assets/assets_drawer/
+    - assets/assets_sobre/
+    - assets/icon_launcher/
+    - assets/icones/
+    - assets/inimigos_naturais/Aranhas/
+    - assets/inimigos_naturais/Aranhas/Aranha-caranguejo/
+    - assets/inimigos_naturais/Aranhas/Aranha-lobo/
+    - assets/inimigos_naturais/Aranhas/Aranha-prata/
+    - assets/inimigos_naturais/Aranhas/Aranha-saltadora/
+    - assets/inimigos_naturais/Tesourinhas/
+    - assets/inimigos_naturais/Tesourinhas/Doru-sp/3.1 adulto/
+    - assets/inimigos_naturais/Tesourinhas/Doru-sp/3.1 ninfa/
+    - assets/inimigos_naturais/Tesourinhas/Euborellia-sp/3.2 Adulto/
+    - assets/inimigos_naturais/Tesourinhas/Euborellia-sp/3.2 Ninfa/
+    - assets/inimigos_naturais/Tesourinhas/Labidura-sp/3.3 Adulto/
+    - assets/inimigos_naturais/Tesourinhas/Labidura-sp/3.3 Ninfa/
+    - assets/inimigos_naturais/Besouros/
+    - assets/inimigos_naturais/Neurópteros/
+    - assets/inimigos_naturais/Percevejos/
+    - assets/inimigos_naturais/Neurópteros/Crisopídeos/Ovo/
+    - assets/inimigos_naturais/Neurópteros/Crisopídeos/Larva/
+    - assets/inimigos_naturais/Neurópteros/Crisopídeos/Pupa/
+    - assets/inimigos_naturais/Neurópteros/Crisopídeos/Adulto/
+    - assets/inimigos_naturais/Neurópteros/Hemerobídeos/Adulto/
+    - assets/inimigos_naturais/Neurópteros/Hemerobídeos/Larva/
+    - assets/inimigos_naturais/Neurópteros/Mantispídeos/Adulto/
+    - assets/inimigos_naturais/Percevejos/Percevejo-pirata/Adulto/
+    - assets/inimigos_naturais/Percevejos/Percevejo-pirata/Ninfa/
+    - assets/inimigos_naturais/Percevejos/Percevejo-olhudo/Ninfa/
+    - assets/inimigos_naturais/Percevejos/Percevejo-olhudo/Adulto/
+    - assets/inimigos_naturais/Percevejos/Percevejos-assassinos/Adulto/
+    - assets/inimigos_naturais/Percevejos/Percevejos-assassinos/Ninfa/
+    - assets/inimigos_naturais/Percevejos/Percevejos-assassinos/Ovo/
+    - assets/inimigos_naturais/Percevejos/Percevejos-asopíneos/Podisus/Adulto/
+    - assets/inimigos_naturais/Percevejos/Percevejos-asopíneos/Podisus/Ninfa/
+    - assets/inimigos_naturais/Percevejos/Percevejos-asopíneos/Podisus/Ovo/
+    - assets/inimigos_naturais/Percevejos/Percevejos-asopíneos/Tynacantha/Adulto/
+    - assets/inimigos_naturais/Percevejos/Percevejos-asopíneos/Tynacantha/Ninfa/
+    - assets/inimigos_naturais/Percevejos/Percevejo-donzela/Adulto/
+    - assets/inimigos_naturais/Percevejos/Percevejo-donzela/Ninfa/
+    - assets/inimigos_naturais/Besouros/Joaninhas/Adulto/
+    - assets/inimigos_naturais/Besouros/Joaninhas/Larva/
+    - assets/inimigos_naturais/Besouros/Joaninhas/Ovo/
+    - assets/inimigos_naturais/Besouros/Joaninhas/Pupa/
+    - assets/inimigos_naturais/Besouros/Carabídeos/Adulto/
+    - assets/inimigos_naturais/Besouros/Besouros-tigre/Adulto/
+    - assets/inimigos_naturais/Besouros/Estafilinídeos/Adulto/
+    - assets/sobre/
+    - assets/assets_appBar/
+    - assets/inimigos_naturais/Louva-a-Deus/
+    - assets/inimigos_naturais/Louva-a-Deus/Adulto/
+    - assets/inimigos_naturais/Louva-a-Deus/Ninfa/
+    - assets/inimigos_naturais/Moscas/
+    - assets/inimigos_naturais/Moscas/Sirfídeos/Adulto/
+    - assets/inimigos_naturais/Moscas/Sirfídeos/Larva/
+    - assets/inimigos_naturais/Moscas/Sirfídeos/Pupa/
+    - assets/inimigos_naturais/Moscas/Asilídeos/Adulto/
+    - assets/inimigos_naturais/Moscas/Condylostylus sp/Adulto/
+    - assets/inimigos_naturais/Moscas/Taquinideos/
+    - assets/inimigos_naturais/Moscas/Taquinideos/Adulto/
+    - assets/inimigos_naturais/Moscas/Taquinideos/Larva/
+    - assets/inimigos_naturais/Moscas/Taquinideos/Ovo/
+    - assets/inimigos_naturais/Moscas/Taquinideos/Pupario/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/Vespa/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/Formiga/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/Vespinha parasitoide Euplectrus/Adulto/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/Vespinha parasitoide Euplectrus/Larva/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/Vespinha parasitoide Euplectrus/Pupa/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/Vespinha parasitoide Aphidiinae/Adulto/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/Vespinha parasitoide Aphidiinae/Hospedeiro parasitado/
+    - assets/inimigos_naturais/Vespas_Vespinhas_Formigas/Outras vespinhas parasitoides.jpg
+
+
